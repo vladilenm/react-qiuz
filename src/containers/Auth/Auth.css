@@ -1,0 +1,10 @@
+.Auth {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-grow: 1;
+    width: 100%;
+    /*background: linear-gradient(90deg, #CE0C2A 0%, #DC6C7F 100%);*/
+    /*background: linear-gradient(270deg, #FAF0E7 0%, #EFE5DC 100%);*/
+    background: linear-gradient(270deg, #F0613C 0%, #F0783C 100%);
+}
