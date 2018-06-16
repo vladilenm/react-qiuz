@@ -1,0 +1,13 @@
+.Button {
+    padding: 6px 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.error {
+    background: rgba(240, 87, 108, 1);
+}
+
+.success {
+    background: rgba(161, 240, 69, 1);
+}

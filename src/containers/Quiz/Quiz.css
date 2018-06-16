@@ -7,6 +7,11 @@
     background: linear-gradient(90deg, #5041B2 0%, #7969E6 100%);
 }
 
+.Quiz h1 {
+    color: #fff;
+    margin-left: 10px;
+}
+
 .QuizWrapper {
     width: 600px;
 }
