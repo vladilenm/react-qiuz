@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import classes from './Auth.css'
 import is from 'is_js'
 import Input from '../../components/ui/Input/Input'
-import Button from '../../components/ui/Button/Button';
+import Button from '../../components/ui/Button/Button'
+import axios from 'axios'
 
 export default class Auth extends Component {
   state = {
@@ -83,12 +84,24 @@ export default class Auth extends Component {
     })
   }
 
-  handleLogin = () => {
-
+  handleLogin = async () => {
+    const authData = {
+      email: this.state.formControls.email.value,
+      password: this.state.formControls.password.value,
+      returnSecureToken: true
+    }
+    const response = await axios.post(`https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAGtN3qksdoCGC0-f6jTWcJD5fwSDDOcc8`, authData)
+    console.log(response.data)
   }
 
-  handleRegister = () => {
-
+  handleRegister = async () => {
+    const authData = {
+      email: this.state.formControls.email.value,
+      password: this.state.formControls.password.value,
+      returnSecureToken: true
+    }
+    const response = await axios.post(`https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyAGtN3qksdoCGC0-f6jTWcJD5fwSDDOcc8`, authData)
+    console.log(response.data)
   }
 
   render() {

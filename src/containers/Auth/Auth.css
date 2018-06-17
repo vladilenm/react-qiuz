@@ -4,7 +4,7 @@
     padding-top: 100px;
     flex-grow: 1;
     width: 100%;
-    background: linear-gradient(270deg, #F0613C 0%, #F0783C 100%);
+    background: linear-gradient(270deg, #cef2fa 0%, #59bfef 100%);
 }
 
 .Auth > div {
@@ -18,8 +18,8 @@
 }
 
 .AuthForm {
-    box-shadow: 2px 3px 1px rgba(0, 0, 0, .3);
-    border: 2px solid #ccc;
+    background: #eeeeee;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
     padding: 15px;
     border-radius: 5px;
 }
