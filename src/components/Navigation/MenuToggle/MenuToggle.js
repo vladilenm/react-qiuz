@@ -13,6 +13,6 @@ export default props => {
     <i
       className={cls.join(' ')}
       onClick={props.onToggle}
-    ></i>
+    />
   )
 }

@@ -5,8 +5,7 @@ import classes from './Layout.css'
 
 export default class Layout extends Component {
   state = {
-    menu: false,
-    quizes: [1, 2]
+    menu: false
   }
 
   toggleMenu = () => {

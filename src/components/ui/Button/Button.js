@@ -4,10 +4,15 @@ import classes from './Button.css'
 export default props => {
   const cls = [
     classes.Button,
-    props.type === 'success' ? classes.success : classes.error
+    classes[props.type]
   ]
+
   return (
-    <button className={cls.join(' ')} onClick={props.onClick}>
+    <button
+      className={cls.join(' ')}
+      onClick={props.onClick}
+      disabled={props.disabled}
+    >
       {props.children}
     </button>
   )
