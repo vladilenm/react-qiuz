@@ -3,7 +3,7 @@ import classes from './Quiz.css'
 import ActiveQuiz from '../../components/ActiveQuiz/ActiveQuiz'
 import FinishedQuiz from '../../components/FinishedQuiz/FinishedQuiz'
 import axios from '../../axios/axios-quiz'
-import Loader from '../../components/ui/Loader/Loader';
+import Loader from '../../components/ui/Loader/Loader'
 
 export default class Quiz extends Component {
   state = {
@@ -54,7 +54,7 @@ export default class Quiz extends Component {
           })
         }
         clearTimeout(timeout)
-      }, 1500) // 1500
+      }, 1500)
     } else {
       results[question.id] = 'error'
       this.setState({
